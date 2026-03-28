@@ -27,6 +27,10 @@
 
       <h1 class="brand">Aura OS</h1>
       <p class="sub">灵境系统 · 流体意图</p>
+      <div class="task-focus">
+        <span>推荐主流程</span>
+        <button class="primary-entry" data-go="5">开始“我要去上海”任务流</button>
+      </div>
 
       <div class="quick-grid">
         <button class="glass-btn" data-go="2"><img src="https://www.figma.com/api/mcp/asset/43384ba8-4f6d-4740-afba-502056aa32e5" alt="" /><span>通知</span></button>
@@ -58,6 +62,7 @@
       <h2 class="screen-title">通知中心</h2>
       <button class="back" data-go="1">←</button>
       <article class="hint-card">视线同步触达: 注视某条通知，然后从屏幕底部向上轻滑</article>
+      <button class="alt-action" data-go="3">不用手势，直接进入空间感知</button>
       <div class="list">
         <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/1332d753-be66-489c-9048-03ad797d9ff9" alt="" /><div><strong>微信消息</strong><span>小明：今晚一起吃饭？</span></div><em>2分钟前</em></button>
         <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/76537b17-f601-48e1-a1ce-5bc6057e61eb" alt="" /><div><strong>邮件</strong><span>您有3封未读邮件</span></div><em>15分钟前</em></button>
@@ -73,6 +78,7 @@
       <h2 class="screen-title">空间感知</h2>
       <button class="back" data-go="1">←</button>
       <article class="hint-card purple">屏幕边缘的光晕代表附近的智能设备。点击设备，然后从中心向光晕方向甩出文件。</article>
+      <button class="alt-action" data-go="4">不用拖拽，直接进入设置页</button>
       <button class="beacon" data-go="4"><img src="https://www.figma.com/api/mcp/asset/39865661-8fb4-4f29-aa89-f502338e7da8" alt="" /><span>拖拽向设备光晕</span></button>
       <p class="section-title">附近的设备</p>
       <div class="list">
@@ -102,7 +108,7 @@
       <img class="bg-image" src="https://www.figma.com/api/mcp/asset/960125d8-30dd-4e3c-95b3-8cf08f4bbaaf" alt="" />
       <div class="overlay"></div>
       <h2 class="screen-title left">生成式任务看板</h2>
-      <button class="close" data-go="1">×</button>
+      <button class="back right" data-go="1">←</button>
       <p class="quote">"我要去上海"</p>
       <article class="glass-card route-card"><h3>推荐航班</h3><div class="slot"><span>CA1234</span><span>¥680</span></div><button class="cta">立即预订</button></article>
       <article class="glass-card hotel-card"><h3>酒店推荐</h3><div class="slot"><span>上海和平饭店</span><span>¥1280</span></div><button class="cta purple" data-go="6">查看详情</button></article>
@@ -115,6 +121,7 @@
       <div class="overlay"></div>
       <h2 class="screen-title">漫游模式</h2><button class="back" data-go="1">←</button><p class="quote">"逛逛"</p>
       <article class="fashion-card"><span class="badge">时尚</span><img src="https://www.figma.com/api/mcp/asset/ba2ff8c2-294f-42a5-8cdc-3e871fea747b" alt="" /><button class="hint-bubble" data-go="7">长按感兴趣的内容，将其吸入意图气泡</button><footer><strong>春季穿搭推荐</strong><div>2341 · 分享</div></footer></article>
+      <button class="alt-action" data-go="8" data-toast="已加入意图锚点">不用长按，直接加入意图锚点</button>
     </section>
 
     <section class="screen" data-screen="7">
@@ -122,7 +129,7 @@
       <div class="overlay"></div>
       <h2 class="screen-title">漫游模式</h2><button class="back" data-go="6">←</button>
       <article class="fashion-card selected short"><span class="badge">时尚</span><img src="https://www.figma.com/api/mcp/asset/c6890e80-981f-4a47-881e-eb8ed2fa3301" alt="" /></article>
-      <article class="drawer"><h3><img src="https://www.figma.com/api/mcp/asset/dd10ae92-50a5-49d6-8d5d-c3c10ef75dd5" alt="" />AI 识别到"时尚灵感"</h3><p>已为您提取相关任务流，是否立即执行？</p><div class="tags"><span class="tag">皮衣</span><span class="tag">极简风</span><span class="tag">黑色系</span></div><button class="action-row">查找相似款商品 <span>→</span></button><button class="action-row">立即购买 <span>→</span></button><button class="action-row primary" data-go="8">保存至"时尚"画板 <span>→</span></button><div class="confidence-text"><span>识别置信度</span><span>92%</span></div><div class="track"><span class="fill"></span></div></article>
+      <article class="drawer"><h3><img src="https://www.figma.com/api/mcp/asset/dd10ae92-50a5-49d6-8d5d-c3c10ef75dd5" alt="" />AI 识别到"时尚灵感"</h3><p>已为您提取相关任务流，是否立即执行？</p><div class="tags"><span class="tag">皮衣</span><span class="tag">极简风</span><span class="tag">黑色系</span></div><button class="action-row">查找相似款商品 <span>→</span></button><button class="action-row">立即购买 <span>→</span></button><button class="action-row primary" data-go="8" data-toast="已保存到时尚画板">保存至"时尚"画板 <span>→</span></button><div class="confidence-text"><span>识别置信度</span><span>92%</span></div><div class="track"><span class="fill"></span></div></article>
     </section>
 
     <section class="screen" data-screen="8">
@@ -134,6 +141,7 @@
     </section>
 
     <nav class="flow-nav"><button id="prevBtn" type="button">上一屏</button><span id="screenLabel">1 / 8</span><button id="nextBtn" type="button">下一屏</button></nav>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
   </main>
   <script src="./app.js"></script>
 </body>

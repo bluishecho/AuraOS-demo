@@ -4,7 +4,9 @@
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
   const label = document.getElementById('screenLabel');
+  const toast = document.getElementById('toast');
   const maxScreen = 8;
+  let toastTimer = null;
 
   let current = Number(prototype.dataset.currentScreen || 1);
 
@@ -26,6 +28,10 @@
   document.addEventListener('click', (event) => {
     const trigger = event.target.closest('[data-go]');
     if (!trigger) return;
+    const toastMessage = trigger.getAttribute('data-toast');
+    if (toastMessage) {
+      showToast(toastMessage);
+    }
     const to = Number(trigger.dataset.go);
     if (!Number.isNaN(to)) {
       setScreen(to);
@@ -39,6 +45,16 @@
     if (event.key === 'ArrowLeft') setScreen(current - 1);
     if (event.key === 'ArrowRight') setScreen(current + 1);
   });
+
+  function showToast(message) {
+    if (!toast) return;
+    toast.textContent = message;
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 1400);
+  }
 
   setScreen(current);
 })();
