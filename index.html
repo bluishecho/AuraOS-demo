@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura OS Flow 1-8</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="prototype" data-current-screen="1">
+    <header class="status-bar">
+      <span>14:32</span>
+      <span class="status-right">
+        <img src="https://www.figma.com/api/mcp/asset/5636ea3b-d297-4275-a94e-3f17834d8cb2" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/931d412c-da29-4f80-b63d-0ccb76ed98ec" alt="" />
+        <img src="https://www.figma.com/api/mcp/asset/319d0df7-b0d9-4d11-89d1-43a34b0ee20c" alt="" />
+        <span>85%</span>
+      </span>
+    </header>
+
+    <section class="screen is-active" data-screen="1">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/d912c19c-52b8-43a7-96ab-97a16e46e82d" alt="" />
+      <div class="overlay"></div>
+
+      <h1 class="brand">Aura OS</h1>
+      <p class="sub">灵境系统 · 流体意图</p>
+
+      <div class="quick-grid">
+        <button class="glass-btn" data-go="2"><img src="https://www.figma.com/api/mcp/asset/43384ba8-4f6d-4740-afba-502056aa32e5" alt="" /><span>通知</span></button>
+        <button class="glass-btn" data-go="3"><img src="https://www.figma.com/api/mcp/asset/2460b241-66ff-44f1-a9f5-1a694e17be2c" alt="" /><span>设备</span></button>
+        <button class="glass-btn" data-go="4"><img src="https://www.figma.com/api/mcp/asset/b7e56ce6-766d-4471-b21e-8d5913e6aa17" alt="" /><span>设置</span></button>
+      </div>
+
+      <article class="glass-card ask-card">
+        <h3>你想做什么？</h3>
+        <div class="input-row">我要去上海</div>
+        <div class="actions-row">
+          <button class="mini"><img src="https://www.figma.com/api/mcp/asset/35242f18-4f28-4614-bac7-ab54cd4ba419" alt="" />语音</button>
+          <button class="mini icon"><img src="https://www.figma.com/api/mcp/asset/ecd61f8e-1f37-4b0a-87fc-813dd1c06f4a" alt="" /></button>
+          <button class="send" data-go="5"><img src="https://www.figma.com/api/mcp/asset/a9ff9d0f-29bd-4dd3-963f-1be64897e309" alt="" /></button>
+        </div>
+      </article>
+
+      <p class="section-title">基于情境的建议</p>
+      <div class="chips">
+        <button class="pill blue" data-go="5">即将到来的行程</button>
+        <button class="pill orange" data-go="5">附近咖啡店</button>
+        <button class="pill pink" data-go="6">正在播放</button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="2">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/6af90e82-9948-4d5d-a67f-c9c981fb2194" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">通知中心</h2>
+      <button class="back" data-go="1">←</button>
+      <article class="hint-card">视线同步触达: 注视某条通知，然后从屏幕底部向上轻滑</article>
+      <div class="list">
+        <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/1332d753-be66-489c-9048-03ad797d9ff9" alt="" /><div><strong>微信消息</strong><span>小明：今晚一起吃饭？</span></div><em>2分钟前</em></button>
+        <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/76537b17-f601-48e1-a1ce-5bc6057e61eb" alt="" /><div><strong>邮件</strong><span>您有3封未读邮件</span></div><em>15分钟前</em></button>
+        <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/3bd9e920-baa0-417f-b62a-5a9202668138" alt="" /><div><strong>日历</strong><span>明天 10:00 团队会议</span></div><em>1小时前</em></button>
+        <button class="list-item" data-go="3"><img src="https://www.figma.com/api/mcp/asset/1f64f6d2-f713-41c5-9561-2c1fc6f4e724" alt="" /><div><strong>健康</strong><span>今日步数已达 8,000 步</span></div><em>2小时前</em></button>
+      </div>
+      <button class="swipe-tip" data-go="3">从此处向上滑动</button>
+    </section>
+
+    <section class="screen" data-screen="3">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/287a7040-0e45-40dd-b03b-8f94b5a7b828" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">空间感知</h2>
+      <button class="back" data-go="1">←</button>
+      <article class="hint-card purple">屏幕边缘的光晕代表附近的智能设备。点击设备，然后从中心向光晕方向甩出文件。</article>
+      <button class="beacon" data-go="4"><img src="https://www.figma.com/api/mcp/asset/39865661-8fb4-4f29-aa89-f502338e7da8" alt="" /><span>拖拽向设备光晕</span></button>
+      <p class="section-title">附近的设备</p>
+      <div class="list">
+        <button class="list-item" data-go="4"><img src="https://www.figma.com/api/mcp/asset/e2200a03-570e-4005-b77d-4c8326a762dd" alt="" /><div><strong>MacBook Pro</strong><span>0.8m</span></div><em>↑</em></button>
+        <button class="list-item" data-go="4"><img src="https://www.figma.com/api/mcp/asset/a202f7c8-ef4d-403f-9ee9-110f9ae0c6af" alt="" /><div><strong>智能台灯</strong><span>1.2m</span></div><em>→</em></button>
+        <button class="list-item" data-go="4"><img src="https://www.figma.com/api/mcp/asset/f84d7672-485b-4b81-8328-ebc164342087" alt="" /><div><strong>咖啡机</strong><span>1.5m</span></div><em>↓</em></button>
+        <button class="list-item" data-go="4"><img src="https://www.figma.com/api/mcp/asset/b84f4810-dc79-45b1-9600-01d3d89f3d5f" alt="" /><div><strong>智能音箱</strong><span>2.0m</span></div><em>←</em></button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="4">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/b554fd2e-375e-4327-905b-a4e3e36e4ff7" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">设置</h2>
+      <button class="back" data-go="1">←</button>
+      <article class="glass-card tune-card"><h3>环境色调</h3><p>系统会自动适应周围环境</p><div class="swatches"><span style="--c:#6366f1"></span><span style="--c:#a855f7"></span><span style="--c:#ec4899"></span><span style="--c:#f97316"></span><span style="--c:#06b6d4"></span><span style="--c:#10b981"></span></div></article>
+      <p class="section-title">核心功能</p>
+      <div class="list">
+        <button class="list-item toggle"><img src="https://www.figma.com/api/mcp/asset/edb5239b-afeb-408c-8eb0-cf4001b1528d" alt="" /><div><strong>视线追踪</strong><span>启用视线同步触达功能</span></div><em class="on">开</em></button>
+        <button class="list-item toggle"><img src="https://www.figma.com/api/mcp/asset/b5f8f632-2bc9-4923-9924-9a6a112fa733" alt="" /><div><strong>空间感知</strong><span>自动发现附近的智能设备</span></div><em class="on">开</em></button>
+        <button class="list-item toggle"><img src="https://www.figma.com/api/mcp/asset/ce7b05f1-8af2-44e3-bfa2-c884114e6e17" alt="" /><div><strong>智能通知</strong><span>基于情境的通知优先级</span></div><em class="on">开</em></button>
+        <button class="list-item toggle"><img src="https://www.figma.com/api/mcp/asset/1c04c5d9-f540-4dd1-9b73-8b381cffa5c1" alt="" /><div><strong>隐私保护</strong><span>本地处理所有生物特征数据</span></div><em class="on">开</em></button>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="5">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/960125d8-30dd-4e3c-95b3-8cf08f4bbaaf" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title left">生成式任务看板</h2>
+      <button class="close" data-go="1">×</button>
+      <p class="quote">"我要去上海"</p>
+      <article class="glass-card route-card"><h3>推荐航班</h3><div class="slot"><span>CA1234</span><span>¥680</span></div><button class="cta">立即预订</button></article>
+      <article class="glass-card hotel-card"><h3>酒店推荐</h3><div class="slot"><span>上海和平饭店</span><span>¥1280</span></div><button class="cta purple" data-go="6">查看详情</button></article>
+      <article class="glass-card schedule-card"><h3>建议行程</h3><div class="mini-list"><span>09:00 参观东方明珠</span><span>12:00 城隍庙午餐</span><span>15:00 外滩漫步</span></div></article>
+      <button class="confirm" data-go="6">确认执行任务流</button>
+    </section>
+
+    <section class="screen" data-screen="6">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/99a65c83-70cc-4315-841c-5083b6e5bc00" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">漫游模式</h2><button class="back" data-go="1">←</button><p class="quote">"逛逛"</p>
+      <article class="fashion-card"><span class="badge">时尚</span><img src="https://www.figma.com/api/mcp/asset/ba2ff8c2-294f-42a5-8cdc-3e871fea747b" alt="" /><button class="hint-bubble" data-go="7">长按感兴趣的内容，将其吸入意图气泡</button><footer><strong>春季穿搭推荐</strong><div>2341 · 分享</div></footer></article>
+    </section>
+
+    <section class="screen" data-screen="7">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/0cb2336f-1ac4-4c54-84f9-ca2eee24e522" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">漫游模式</h2><button class="back" data-go="6">←</button>
+      <article class="fashion-card selected short"><span class="badge">时尚</span><img src="https://www.figma.com/api/mcp/asset/c6890e80-981f-4a47-881e-eb8ed2fa3301" alt="" /></article>
+      <article class="drawer"><h3><img src="https://www.figma.com/api/mcp/asset/dd10ae92-50a5-49d6-8d5d-c3c10ef75dd5" alt="" />AI 识别到"时尚灵感"</h3><p>已为您提取相关任务流，是否立即执行？</p><div class="tags"><span class="tag">皮衣</span><span class="tag">极简风</span><span class="tag">黑色系</span></div><button class="action-row">查找相似款商品 <span>→</span></button><button class="action-row">立即购买 <span>→</span></button><button class="action-row primary" data-go="8">保存至"时尚"画板 <span>→</span></button><div class="confidence-text"><span>识别置信度</span><span>92%</span></div><div class="track"><span class="fill"></span></div></article>
+    </section>
+
+    <section class="screen" data-screen="8">
+      <img class="bg-image" src="https://www.figma.com/api/mcp/asset/3e4b9f45-826b-4ace-ae71-cddc74e7edd8" alt="" />
+      <div class="overlay"></div>
+      <h2 class="screen-title">漫游模式</h2><button class="back" data-go="7">←</button>
+      <article class="fashion-card selected short"><span class="badge">时尚</span><img src="https://www.figma.com/api/mcp/asset/bec66329-67d2-40cd-91aa-f37eaf15b824" alt="" /></article>
+      <article class="drawer compact"><div class="drawer-head"><h3><img src="https://www.figma.com/api/mcp/asset/632d02a1-e6cd-4c04-a828-66a008605b32" alt="" />意图锚点</h3><span class="count">1 项</span></div><div class="anchor-item"><img src="https://www.figma.com/api/mcp/asset/0789ed69-1e75-47cb-9d6b-3f5c280b741e" alt="" /><p>春季穿搭推荐</p></div><button class="cta blue" data-go="5">生成购物看板</button></article>
+    </section>
+
+    <nav class="flow-nav"><button id="prevBtn" type="button">上一屏</button><span id="screenLabel">1 / 8</span><button id="nextBtn" type="button">下一屏</button></nav>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
